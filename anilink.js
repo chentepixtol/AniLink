@@ -3,9 +3,9 @@
      options: {
        enterClass: 'link-enter',
        leaveClass: 'link-leave',
-	   morph: {
+       morph: {
 	   	 duration: 500,
-		 transition: 'quad:out',
+		 transition: 'quad:in:out',
 		 onComplete: $empty
 	   }      
      },
@@ -23,7 +23,9 @@
 
           link.addEvent('mouseleave', function(){
             link.removeClass(this.options.enterClass);
-			link.set('morph',$merge(this.options.morph ,{onComplete: function(){link.setStyle('background-color','transparent')} }));
+			link.set('morph', $merge( this.options.morph ,{
+                onComplete: function(){ link.setStyle('background-color','transparent') }})
+            );
             link.morph('.' + this.options.leaveClass);
           }.bind(this));       
 
