@@ -3,6 +3,7 @@ var Anilink = new Class( {
 	options : {
 		enterClass : 'link-enter',
 		leaveClass : 'link-leave',
+		duration: 500,
 		morph : {
 			duration : 500,
 			transition : 'quad:in:out',
