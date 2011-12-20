@@ -1,3 +1,4 @@
+// class for mootools
 var Anilink = new Class( {
 	Implements : [ Options ],
 	options : {
@@ -35,3 +36,4 @@ var Anilink = new Class( {
 		}, this);
 	}
 });
+
