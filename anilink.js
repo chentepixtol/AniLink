@@ -1,3 +1,6 @@
+/**
+ * Mootools plugin for animation links
+ **/
 var Anilink = new Class( {
 	Implements : [ Options ],
 	options : {
